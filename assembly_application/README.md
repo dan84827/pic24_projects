@@ -14,8 +14,8 @@ The program initially starts with all LED’s off. Then, for each press
 of the switch, it displays a pattern on the LED’s indicating, in binary the number it generated. Note that for proper operation, the switch must be debounced with either a delay in the code or a small capacitor.
 
 ## The rand48 Function
-rand48 functions work by generating a sequence of 48-bit integers, X\_i , according to the linear congruential formula:
-`X\_n+1 = (a\*X\_n + c)\*mod\_(m)`, where `n >= 0`
+rand48 functions work by generating a sequence of 48-bit integers, X_i , according to the linear congruential formula:
+`X_n+1 = (a*X_n + c)*mod(m)`, where `n >= 0`
 The parameter `m = 2^48`, hence 48-bit integer arithmetic is performed. `a` and
 `c` are given by:
 
@@ -24,7 +24,7 @@ The parameter `m = 2^48`, hence 48-bit integer arithmetic is performed. `a` and
 	c = 11;
 ```
 
-X\_0 is initialized using setseed48, given here as a C function:
+X_0 is initialized using setseed48, given here as a C function:
 	
 ```
 void setSeed(unsigned long int seed)
