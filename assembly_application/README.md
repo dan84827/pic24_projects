@@ -1,6 +1,6 @@
 # 48-bit Multiplication on the PIC24
 
-In this project, I wrote some assembly and C code that does the following:
+In this project, did the following:
 
 1. Write a 48-bit unsigned multiplication subroutine in PIC24F assembly
 language.
@@ -8,7 +8,7 @@ language.
 2. Write a subroutine which implements the algorithm for the rand48 pseudo-
 random number generators in PIC24F assembly language (the methodology is given below.)
 
-3. Do the same thing in C.
+3. 1. and 2. in C.
 
 The program initially starts with all LED’s off. Then, for each press
 of the switch, it displays a pattern on the LED’s indicating, in binary the number it generated. Note that for proper operation, the switch must be debounced with either a delay in the code or a small capacitor.
